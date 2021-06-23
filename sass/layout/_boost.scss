@@ -1,0 +1,18 @@
+.boost {
+  width: 100%;
+  height: auto;
+  padding: 5rem 12rem;
+  background-color: $color-secondary;
+  background-image: url("../../img/bg-boost-desktop.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 3rem;
+    background-image: url("../../img/bg-boost-mobile.svg");
+  }
+}

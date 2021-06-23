@@ -1,0 +1,205 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 12rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: auto;
+    margin-bottom: 18rem;
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    width: 45%;
+    padding-left: 12rem;
+    @media only screen and (max-width: $bp-largest) {
+      padding-left: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 50%;
+      padding-left: 5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 52%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      padding: 0 5rem;
+    }
+  }
+
+  &__img {
+    width: 45%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+      margin: 3rem;
+      margin-right: 0;
+      align-self: flex-end;
+    }
+  }
+}
+
+.nav {
+  .hamburger {
+    display: none;
+    margin-bottom: 3rem;
+
+    .bar {
+      display: block;
+      width: 2.5rem;
+      height: 0.3rem;
+      margin: 3px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: $color-grey-dark-1;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  // display: none;
+  height: auto;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12rem;
+  font-size: 1.6rem;
+  font-family: $font-display;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 2rem 8rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    padding: 2rem 5rem;
+  }
+
+  &__logo {
+    margin-right: 4rem;
+    align-self: baseline;
+    img {
+      height: 4.5rem;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-evenly;
+      background-color: $color-primary;
+      padding: 3rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+  &__item {
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    &:nth-last-of-type(2) {
+      margin-left: auto;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-left: 0;
+        border-top: 1px solid $color-grey-dark-1;
+        padding-top: 1rem;
+      }
+    }
+    position: relative;
+    &--hover::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      visibility: hidden;
+      background-color: $color-grey-dark-2;
+      transition: all 0.3s ease-in-out;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    &--hover:hover::after {
+      visibility: visible;
+      width: 100%;
+    }
+
+    &:not(:last-of-type):active {
+      @media only screen and (max-width: $bp-medium) {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-grey-dark-2;
+
+    @media only screen and (max-width: $bp-medium) {
+      color: $color-grey-light-1;
+    }
+
+    &--btn {
+      padding: 0.8rem 2rem;
+      background-color: $color-secondary-light;
+      color: $color-grey-light-1;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+      display: block;
+
+      &:hover {
+        background-color: $color-secondary;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+
+  .show {
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+  }
+}

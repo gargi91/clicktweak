@@ -1,0 +1,115 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 5rem 12rem;
+  background-color: $color-secondary-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-between;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 5rem 8rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 5rem;
+  }
+
+  &__master {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // &__logo {
+  //   margin-right: auto;
+  //   img {
+  //     height: 4.5rem;
+  //     width: auto;
+  //   }
+
+  //   @media only screen and (max-width: $bp-small) {
+  //     // margin: 3rem;
+  //     // margin-top: 0;
+  //     margin: 0 auto 3rem;
+  //   }
+  // }
+
+  &__nav {
+    display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    margin-right: 8rem;
+
+    &--item:not(:last-of-type) {
+      margin-bottom: 0.8rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__link {
+    color: $color-grey-light-2;
+    text-transform: capitalize;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+
+  &-link:not(:last-of-type) {
+    margin-right: 1.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 2rem;
+    }
+  }
+
+  &-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba($color: $color-primary-dark, $alpha: 0.45);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.copy {
+  color: $color-grey-dark-2;
+}

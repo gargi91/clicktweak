@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+        crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clicktweak | Link shortening website</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo-small.png"
+                        alt="Clicktweak logo">clicktweak.</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0
+                        navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="button btn-login button--no-transition
+                        btn-small">Login</button>
+                    <button type="button" class="button button--dark button--no-transition btn-signup
+                        btn-small">Sign
+                        Up</button>
+                </div>
+            </div>
+        </nav>
+        <div class="header__content">
+            <div class="header__title">
+                <h1 class="heading--1 mb-sm">More than just shorter links</h1>
+                <h4 class="heading--4 mb-md">Build your brand's recognition and
+                    get
+                    detailed insights on how your links are performing.</h4>
+                <button class="button button--dark">Get Started</button>
+            </div>
+            <img src="img/link-shortener-illustration.svg" alt="Illustration"
+                class="header__img">
+        </div>
+    </header>
+
+    <section class="operation">
+        <div class="operation__wrapper">
+            <article class="operation__main mb-md">
+                <form action="" method="post" class="input__form">
+                    <input type="text" class="input__link"
+                        placeholder="Shorten a link here...">
+                    <button type="submit" class="button button--no-transition button--light
+                        input__submit">Shorten
+                        it!</button>
+                </form>
+                <div class="input__error">Please add a link</div>
+            </article>
+            <!-- Load spinner -->
+            <div class="loadingio-spinner-eclipse-8ifuwozc6d hide-spinner">
+                <div class="ldio-gleq8buvyac">
+                    <div></div>
+                </div>
+            </div>
+            <div class="spinner-helper"></div>
+
+            <!-- <div class="operation__output ">
+                <div class="output__input-link">
+                    https://quizzical-golick-db2910.netlify.app/url-shortening-api-master/index.html
+                </div>
+                <div class="output__output-link">https://9qr.de/KCveN 1</div>
+                <button
+                    class="button button--no-transition button--dark btn-copy">Copy</button>
+            </div>
+            <div class="operation__output ">
+                <div class="output__input-link">
+                    https://quizzical-golick-db2910.netlify.app/url-shortening-api-master/index.html
+                </div>
+                <div class="output__output-link">https://9qr.de/KCveN 2</div>
+                <button
+                    class="button button--no-transition button--dark btn-copy">Copy</button>
+            </div>
+            <div class="operation__output ">
+                <div class="output__input-link">
+                    https://quizzical-golick-db2910.netlify.app/url-shortening-api-master/index.html
+                </div>
+                <div class="output__output-link">https://9qr.de/KCveN 3</div>
+                <button
+                    class="button button--no-transition button--dark btn-copy">Copy</button>
+            </div> -->
+
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="heading--2 mb-sm">Advanced Statistics</h2>
+        <h4 class="heading--4 heading--sub">Track how your links are
+            performing across the web with our advanced statistics dashboard
+        </h4>
+        <div class="features__container">
+            <div class="features__box features__box--1">
+                <div class="feature__icon-box">
+                    <svg class="feature__icon">
+                        <use xlink:href="img/sprite.svg#icon-brand-recognition">
+                        </use>
+                    </svg>
+                </div>
+                <div class="feature__text">
+                    <h3 class="heading--3 mb-sm">Brand Recognition</h3>
+                    <p class="para">Boost your brand recognition with each
+                        click. Generic link don't mean a thing. Branded links
+                        help instil confidence in your content.
+                    </p>
+                </div>
+            </div>
+            <div class="features__box features__box--2">
+                <div class="feature__icon-box">
+                    <svg class="feature__icon">
+                        <use xlink:href="img/sprite.svg#icon-detailed-records">
+                        </use>
+                    </svg>
+                </div>
+                <div class="feature__text">
+                    <h3 class="heading--3 mb-sm">Detailed Records</h3>
+                    <p class="para">Gain insights into who is clicking your
+                        links. Knowing when and where
+                        people engage with your content helps inform better
+                        decisions.
+                    </p>
+                </div>
+            </div>
+            <div class="features__box features__box--3">
+                <div class="feature__icon-box">
+                    <svg class="feature__icon">
+                        <use
+                            xlink:href="img/sprite.svg#icon-fully-customizable">
+                        </use>
+                    </svg>
+                </div>
+                <div class="feature__text">
+                    <h3 class="heading--3 mb-sm">Fully customizable</h3>
+                    <p class="para">Improve brand awareness and content
+                        discoverability through customizable
+                        links, supercharging audience engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="boost">
+        <h2 class="heading--2 heading--light mb-md">Boost your links today</h2>
+        <button class="button button--light">Get Started</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__master mb-lg">
+            <a class="navbar-brand navbar-brand-footer" href="#"><img
+                    src="img/logo-small.png"
+                    alt="Clicktweak logo">clicktweak.</a>
+
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <h5 class="heading--5 mb-sm">Features</h5>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Link shortening</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Branded links</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Analytics</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <h5 class="heading--5 mb-sm">Resources</h5>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Developers</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Support</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <h5 class="heading--5 mb-sm">Company</h5>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">About</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Our Team</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Career</a>
+                    </li>
+                    <li class="footer__list--item">
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon">
+                        <use xlink:href="img/sprite.svg#icon-facebook" />
+                    </svg>
+                </a>
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon">
+                        <use xlink:href="img/sprite.svg#icon-twitter" />
+                    </svg>
+                </a>
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram" />
+                    </svg>
+                </a>
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon">
+                        <use xlink:href="img/sprite.svg#icon-pinterest" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <small class="copy">&copy; <span class="year">2021</span> by Clicktweak.
+            All rights
+            reserved.</small>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

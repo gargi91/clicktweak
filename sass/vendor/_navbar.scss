@@ -1,0 +1,97 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 2rem 12rem;
+  background-color: coral;
+  align-items: center;
+  z-index: 100;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 2rem 8rem;
+  }
+  @media only screen and (max-width: $bp-large) {
+    padding: 2rem 5rem;
+  }
+}
+
+.navbarsticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-brand {
+  font-family: $font-display;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: $color-secondary-dark;
+  img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 0.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 0;
+  }
+}
+
+.navbar-collapse {
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 3rem;
+    background-color: $color-primary;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.navbar-brand-footer {
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+  color: $color-grey-dark-2;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $color-grey-dark-2;
+
+  @media only screen and (max-width: $bp-medium) {
+    color: #fff;
+    text-align: center;
+  }
+
+  &:hover {
+    color: $color-primary-dark;
+    @media only screen and (max-width: $bp-medium) {
+      color: #fff;
+    }
+  }
+
+  &:active {
+    @media only screen and (max-width: $bp-medium) {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+.navbar-nav {
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    border-bottom: 1px solid $color-grey-dark-1;
+  }
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}

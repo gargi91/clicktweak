@@ -1,0 +1,129 @@
+.heading {
+  &--1 {
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 1.2px;
+    color: $color-secondary;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4.2rem;
+      letter-spacing: initial;
+    }
+  }
+
+  &--2 {
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: 4rem;
+    color: $color-secondary;
+    text-transform: capitalize;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.75rem;
+    }
+  }
+
+  &--3 {
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: $color-secondary;
+    text-transform: capitalize;
+  }
+
+  &--4 {
+    font-family: $font-primary;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-grey-dark-2;
+    // text-transform: capitalize;
+  }
+
+  &--5 {
+    font-family: $font-display;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  &--light {
+    color: #fff;
+  }
+}
+
+.para {
+  font-size: 1.6rem;
+  color: $color-grey-dark-1;
+}
+
+.button {
+  outline: none;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: $font-display;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  transform: translateY(0);
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &--no-transition {
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+}
+
+.button--dark {
+  background-color: $color-secondary-light;
+  color: $color-grey-light-1;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
+
+.button--light {
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.btn-small {
+  // font-size: 1.4rem;
+  font-family: $font-display;
+  padding: 0.5rem 2rem;
+}
+
+.btn-login {
+  color: $color-grey-dark-1;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: none;
+    color: $color-primary-dark;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
