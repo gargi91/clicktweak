@@ -122,7 +122,7 @@ const getShortLink = function (longLink) {
     .catch((err) => {
       hideLoadingSpinner();
       console.error(`Something went wrong!${err.message}😔😓`);
-      renderError(err.message + ". Try again later!");
+      renderError(err.message + ".");
     });
 };
 
